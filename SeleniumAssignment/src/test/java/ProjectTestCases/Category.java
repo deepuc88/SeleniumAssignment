@@ -33,7 +33,7 @@ public class Category extends ExtentTestManager {
 		BrowserUtility objutil = new BrowserUtility();
 		driver = objutil.baseDriver();
 		wait = new WaitUtility(driver);
-		wait.normalWait(13000);
+		wait.normalWait(14000);
 
 		objCategory = new PomCategory(driver);
 		objCategory.categoryUi();

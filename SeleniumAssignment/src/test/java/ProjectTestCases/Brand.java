@@ -50,7 +50,7 @@ public class Brand extends ExtentTestManager {
 		String brandUiExpected = "Brands Manage your brands";
 		Assert.assertEquals(brandUiActual, brandUiExpected);
 		System.out.println("Passed : brand ui landed");
-		// Thread.sleep(3000);
+		
 		objBrand.addBrand();
 		wait.normalWait(1000);
 		objBrand.brandNameSendKeys("Deepu_124");
@@ -58,7 +58,7 @@ public class Brand extends ExtentTestManager {
 		objBrand.brandSave();
 
 		String brandSuccessActual = objBrand.getTextBrandAdd();
-		//System.out.println(brandSuccessActual);
+		
 		String brandSuccessExpected = "Brand added successfully";
 		Assert.assertEquals(brandSuccessActual, brandSuccessExpected);
 		System.out.println("Passed : brand added");
@@ -80,7 +80,7 @@ public class Brand extends ExtentTestManager {
 		
 		System.out.println("brand value from table : "+brandTableValueActl);
 		wait.normalWait(1000);
-		// String brandTableValueExpct = "Deepu_123";
+		
 		Assert.assertEquals(brandTableValueActl, brandSearch);
 		System.out.println("Passed : Brand found in table");
 		test1.log(Status.PASS, " search Brand");
